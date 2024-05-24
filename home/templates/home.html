@@ -1,0 +1,15 @@
+<!-- {% load permission_tags %}
+
+{% if user|has_role:'vendedor' %}
+    Página od vendedor
+{% else %}
+    voce nao é vendedor
+{% endif %} -->
+
+{% load permission_tags %}
+
+{% if user|can:'ver_metas' %}
+    a meta é 10000
+{% else %}
+    voce nao é vendedor
+{% endif %}
